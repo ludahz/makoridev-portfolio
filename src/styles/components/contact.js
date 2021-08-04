@@ -5,73 +5,59 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
-  min-height: 100%;
   @media ${theme.breakpoints.md} {
     flex-direction: column;
   }
 `
 
 export const LeftSection = styled.div`
-  position: relative;
+  width: 50%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
-  height: 70vh;
+
   color: ${theme.colors.typeface};
   @media ${theme.breakpoints.md} {
-    margin-left: 10%;
+    margin: 0 auto;
     width: 80%;
-    min-height: 70vh;
+    margin-bottom: 30px;
   }
   @media ${theme.breakpoints.sm} {
     width: 100%;
-    min-height: 60vh;
-    margin: 0;
   }
 `
 export const RightSection = styled.div`
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 50%;
-  height: 70vh;
 
   color: ${theme.colors.typeface};
   @media ${theme.breakpoints.md} {
     margin-left: 10%;
     width: 80%;
-    height: 80vh;
+    margin-bottom: 30px;
   }
   @media ${theme.breakpoints.sm} {
     width: 100%;
-    min-height: 70vh;
     margin: 0;
   }
 `
 export const LeftContainer = styled.div`
-  background: rgb(0, 0, 0, 0.4);
   width: 90%;
-  min-height: 60vh;
-  padding: 10px;
+  padding: 10px 20px 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
   background-image: ${theme.gradient.linear};
-  @media ${theme.breakpoints.lg} {
-    min-height: 66vh;
-  }
 `
 export const RightContainer = styled.div`
   position: relative;
   background: rgb(0, 0, 0, 0.4);
   width: 90%;
-  min-height: 60vh;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -84,7 +70,6 @@ export const RightContainer = styled.div`
 export const ContactContainer = styled.div`
   position: relative;
   width: 90%;
-  min-height: 55vh;
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -94,7 +79,6 @@ export const ContactContainer = styled.div`
 `
 
 export const Form = styled.form`
-  position: relative;
   width: 100%;
 `
 
@@ -141,26 +125,23 @@ export const Button = styled.button`
 `
 
 export const ContentDiv = styled.div`
+  position: relative;
   width: 100%;
   padding: 10px;
   text-align: center;
 `
 
 export const InfoContainer = styled.div`
-  position: relative;
   width: 90%;
-  min-height: 55vh;
 `
 export const InfoDiv = styled.div`
   width: 100%;
-  position: absolute;
   padding: 0 20px;
   margin: 0 auto;
   bottom: 70px;
 `
 
 export const SocialSection = styled.div`
-  position: absolute;
   color: ${theme.colors2.accent};
   width: 100%;
   bottom: 10px;
@@ -237,9 +218,7 @@ export const LabelDiv = styled.div`
   text-align: left;
 `
 export const TopDiv = styled.div`
-  position: relative;
   height: 170px;
-  width: 90%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -250,6 +229,9 @@ export const MailDiv = styled.div`
   position: absolute;
   transform: rotate(-20deg);
   color: ${theme.colors2.accent};
+  @media ${theme.breakpoints.md} {
+    top: 80px;
+  }
 `
 export const CallDiv = styled.div`
   position: absolute;

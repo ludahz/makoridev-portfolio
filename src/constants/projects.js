@@ -4,48 +4,30 @@ const desc =
 const myProjects = [
   {
     id: 1,
-    img: 'image/Mountain1.jpeg',
-    title: 'Title 1',
-    tech: ['javascript', 'nodejs', 'react', 'mongodb'],
-    despription: desc,
+    img: 'image/E-Commerce Website.png',
+    title: 'E-Commerce(MERN)',
+    tech: ['MongoDB', 'Express', 'React', 'Nodejs'],
+    despription: (
+      <div>
+        <p>
+          This is a customized ecommerce application. It uses a MERN stack and
+          has the following functionalities:
+        </p>
+        <br />
+        <ul>
+          <li>Login and Logout options for admin and user profiles</li>
+          <li>User add to cart and place order functions </li>
+          <li>Admin with user and product management functions</li>
+          <li>Shopping cart feature</li>
+          <li>Product search feature</li>
+          <li>Product review and ratings feature</li>
+          <li>Checkout process feature</li>
+          <li>Paypal and credit card intergration</li>
+        </ul>
+      </div>
+    ),
     git: 'https://github.com',
-    cloud: 'https://linkedin.com',
-  },
-  {
-    id: 2,
-    img: 'image/Mountain2.jpeg',
-    title: 'Title 2',
-    tech: ['javascript', 'nodejs', 'react'],
-    despription: desc,
-    git: 'https://github.com',
-    cloud: 'https://linkedin.com',
-  },
-  {
-    id: 3,
-    img: 'image/Mountain3.png',
-    title: 'Title 3',
-    tech: ['javascript', 'nodejs', 'react'],
-    despription: desc,
-    git: 'https://github.com',
-    cloud: 'https://linkedin.com',
-  },
-  {
-    id: 4,
-    img: 'image/Mountain4.jpeg',
-    title: 'Title 4',
-    tech: ['javascript', 'nodejs', 'react'],
-    despription: desc,
-    git: 'https://github.com',
-    cloud: 'https://linkedin.com',
-  },
-  {
-    id: 5,
-    img: 'image/Mountain5.jpeg',
-    title: 'Title 5',
-    tech: ['javascript', 'nodejs', 'react'],
-    despription: desc,
-    git: 'https://github.com',
-    cloud: 'https://linkedin.com',
+    cloud: 'https://ludahsproshop.herokuapp.com',
   },
 ]
 

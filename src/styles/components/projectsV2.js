@@ -48,7 +48,7 @@ export const ImageContainer = styled.div`
 `
 export const Img = styled.img`
   width: 100%;
-  height: 94%;
+  height: 95%;
   overflow: hidden;
   border-radius: 10px 10px 0 0;
 `
@@ -58,14 +58,14 @@ export const Info = styled.div`
   width: 100%;
   height: 300px;
   background-image: linear-gradient(-120deg, #343a4f, #0f1620);
-  transform: translateY(100%) translateY(-113px) translateZ(0);
+  transform: translateY(100%) translateY(-110px) translateZ(0);
   transition: transform 0.5s ease-out;
 `
 
 export const Title = styled.h1`
   margin: 0;
   padding: 10px 24px;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
   line-height: 1;
   color: rgba(245, 240, 240, 0.8);

@@ -47,15 +47,15 @@ export const ContentContainer = styled.div`
   background-image: linear-gradient(-120deg, #343a4f, #0f1620);
   min-height: 0vh;
   border-radius: 0 0 12px 12px;
-  @media ${theme.breakpoints.sm} {
-    max-height: 80vh;
-  }
 `
 export const ProjectTitle = styled.h2`
   color: ${theme.colors2.primary};
   font-weight: 600;
   font-size: 1.8rem;
   padding: 5px 24px;
+  @media ${theme.breakpoints.md} {
+    font-size: 1.6rem;
+  }
 `
 export const ProjectStack = styled.h4`
   color: #f5e2c8;
@@ -71,6 +71,9 @@ export const ProjectDesc = styled.p`
   font-weight: 400;
   font-size: 0.9rem;
   padding: 10px 20px;
+  ul {
+    padding: 0 10px 0 30px;
+  }
 `
 export const SocialsContainer = styled.div`
   position: relative;
