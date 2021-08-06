@@ -16,8 +16,8 @@ html{
 
   margin: 0 auto;
   scroll-behavior: smooth;
-  background-position-x: center;
-  background-position-y: top 58px;
+  /* background-position-x: center; */
+  /* background-position-y: top 58px; */
   display: block;
   @media ${theme.breakpoints.md} {
     max-width: calc(100vw - 10%);

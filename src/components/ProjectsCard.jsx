@@ -18,7 +18,11 @@ import {
   BottomDiv,
 } from '../styles/components/projectCards'
 import myProjects from '../constants/projects'
-import { AiFillCloseCircle } from 'react-icons/ai'
+import {
+  AiFillCloseCircle,
+  AiOutlineCloseCircle,
+  IoIosCloseCircleOutline,
+} from 'react-icons/io'
 
 const ProjectsCard = ({ currentId, state }) => {
   const display = myProjects.filter((project) => project.id === currentId)
@@ -59,8 +63,8 @@ const ProjectsCard = ({ currentId, state }) => {
           </BottomDiv>
         </ContentContainer>
         <CardButton>
-          <AiFillCloseCircle
-            size='2rem'
+          <IoIosCloseCircleOutline
+            size='2.2rem'
             onClick={() => {
               state(false)
             }}

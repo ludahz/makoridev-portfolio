@@ -30,7 +30,7 @@ export const Container = styled.div`
 `
 export const Card = styled.div`
   position: relative;
-  border-radius: 10px;
+  border-radius: 5px;
   margin: 10px 5px;
   width: 320px;
 
@@ -50,7 +50,6 @@ export const Img = styled.img`
   width: 100%;
   height: 95%;
   overflow: hidden;
-  border-radius: 10px 10px 0 0;
 `
 
 export const Info = styled.div`
@@ -64,7 +63,7 @@ export const Info = styled.div`
 
 export const Title = styled.h1`
   margin: 0;
-  padding: 10px 24px;
+  padding: 10px 18px;
   font-size: 25px;
   font-weight: 600;
   line-height: 1;

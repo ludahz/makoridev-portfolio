@@ -13,33 +13,43 @@ export const ProjectsContainer = styled.div`
 
 export const Card = styled.div`
   min-height: 100vh;
-  width: 400px;
+  max-width: 450px;
   border-radius: 10px;
   position: relative;
   margin-bottom: 40px;
-  @media ${theme.breakpoints.sm} {
+  @media ${theme.breakpoints.md} {
+    width: 60%;
+  }
+  @media ${theme.breakpoints.sd} {
+    width: 80%;
+  }
+  @media ${theme.breakpoints.ml} {
     width: 90%;
   }
-  @media ${theme.breakpoints.md} {
-    width: 330px;
+  @media (max-width: 375px) {
+    width: 90%;
   }
 `
 export const ImageContainer = styled.div`
   width: 100%;
-  height: 35vh;
-  @media ${theme.breakpoints.sm} {
-    height: 35vh;
-  }
+  height: 40vh;
+  background-color: black;
   @media ${theme.breakpoints.md} {
-    height: 200px;
+    height: 280px;
+  }
+  @media ${theme.breakpoints.ml} {
+    height: 230px;
+  }
+  @media ${theme.breakpoints.mm} {
+    height: 220px;
   }
 `
 export const Img = styled.img`
   width: 100%;
   height: 100%;
   overflow: hidden;
-  transition: all ease-in 1s;
-  border-radius: 10px 10px 0 0;
+  /* object-fit: contain; */
+  border-radius: 5px 5px 0 0;
 `
 
 export const ContentContainer = styled.div`
@@ -55,6 +65,12 @@ export const ProjectTitle = styled.h2`
   padding: 5px 24px;
   @media ${theme.breakpoints.md} {
     font-size: 1.6rem;
+  }
+  @media ${theme.breakpoints.mm} {
+    font-size: 1.4rem;
+  }
+  @media ${theme.breakpoints.ms} {
+    font-size: 1.2rem;
   }
 `
 export const ProjectStack = styled.h4`
@@ -117,11 +133,32 @@ export const SocialsDiv = styled.div`
   }
 `
 export const CardButton = styled.span`
-  top: 1px;
-  right: 1px;
+  top: 2px;
+  right: 2px;
   position: absolute;
+  color: ${theme.colors2.accent};
+  background: rgb(0, 0, 0, 0.4);
+  display: flex;
+  border-radius: 50%;
+  transition: ease;
+
   :hover {
     cursor: pointer;
+    animation-name: shadow;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes shadow {
+    0% {
+      box-shadow: 0 0 1px 2px ${theme.colors2.accent};
+    }
+    50% {
+      /* box-shadow: 0 0 0 2px ${theme.colors2.accent}; */
+    }
+    100% {
+      box-shadow: 0 0 1px 5px transparent;
+    }
   }
 `
 export const StackCard = styled.div`
