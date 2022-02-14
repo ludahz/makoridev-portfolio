@@ -4,6 +4,21 @@ const desc =
 const myProjects = [
   {
     id: 1,
+    img: 'image/glbgroup.png',
+    title: 'Import/Export',
+    tech: ['Next', 'javascript'],
+    despription: (
+      <p>
+        This is a clients Import / Export website built by nextjs framework. 
+        The reason why I decided to use nextjs in this project is because of the easy routing.
+        I used styled components for styling.
+      </p>
+    ),
+    git: 'https://github.com/ludahz/glb-group',
+    cloud: 'https://glbgroup10.com',
+  },
+  {
+    id: 2,
     img: 'image/E-Commerce Website.png',
     title: 'E-Commerce(MERN)',
     tech: ['MongoDB', 'Express', 'React', 'Nodejs'],
@@ -44,7 +59,7 @@ const myProjects = [
     cloud: 'https://ludahsproshop.herokuapp.com',
   },
   {
-    id: 2,
+    id: 3,
     img: 'image/Netflix-clone.png',
     title: 'Netflix Clone',
     tech: ['React', 'Redux', 'Firebase'],

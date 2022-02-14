@@ -38,3 +38,14 @@ export const IconTitle = styled.h3`
   font-size: 1rem;
   color: ${theme.colors2.compliment};
 `
+
+export const Ul = styled.ul`
+  list-style: none;
+`
+
+export const Span = styled.span`
+
+  padding-right: 0.2rem;
+  color: ${theme.colors2.accent};
+  
+`
